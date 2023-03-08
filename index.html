@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>library</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header><div class="title">Your Library</div></header>
+    <div class="add-book"><button class="add-book-btn">Add New</button></div>
+    <section>
+      <div class="book-container"></div>
+    </section>
+    <div class="popup">
+      <p class="popup-title-text">Add new Book</p>
+      <form>
+        <input type="text" placeholder="Title" class="popup-title" />
+        <input type="text" placeholder="Author" class="popup-author" />
+        <input type="text" placeholder="Pages" class="popup-pages" />
+        <div class="popup-read">
+          Have you read it?
+          <input type="checkbox" class="popup-checkbox" value="true" />
+        </div>
+        <button class="submit">Submit</button>
+      </form>
+    </div>
+    <div class="overlay"></div>
+    <script src="main.js"></script>
+  </body>
+</html>

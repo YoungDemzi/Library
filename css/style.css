@@ -1,0 +1,273 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+:root {
+  --primary-color: #ecf2ff;
+  --secondary-color: #e0eaff;
+  --shadow-color: #5e5c5c4f 0px 1px 4px;
+  --card-color: #e3dffd;
+  --fill-color: #e5d1fa;
+  --text-color: #33333e;
+  --font-size-header: 28px;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+}
+
+header {
+  text-align: center;
+  font-size: var(--font-size-header);
+  background-color: var(--primary-color);
+  box-shadow: var(--shadow-color);
+  font-weight: 600;
+}
+
+.add-book-btn {
+  background-color: transparent;
+  padding: 2rem;
+  margin-top: 1rem;
+  width: 400px;
+  border: 1px solid var(--text-color);
+  border-radius: 0.5rem;
+}
+
+section,
+.add-book {
+  display: flex;
+  justify-content: center;
+}
+
+.book-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.book {
+  background-color: var(--card-color);
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow-color);
+  height: fit-content;
+  width: 400px;
+}
+
+.title,
+.popup-title-text {
+  text-align: center;
+  font-weight: 600;
+  font-size: 800;
+  padding: 0.5rem;
+  box-shadow: var(--shadow-color);
+  background-color: var(--fill-color);
+}
+
+.book-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.book-text-content {
+  padding-bottom: 0.5rem;
+}
+
+.author,
+.pages {
+  font-weight: 600;
+  padding: 4px;
+}
+
+.book-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.book-btn,
+.submit {
+  background-color: var(--text-color);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.popup {
+  width: 300px;
+  background-color: var(--card-color);
+  box-shadow: var(--shadow-color);
+  position: fixed;
+  display: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  z-index: 1;
+  border-radius: 0.5rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  gap: 0.5rem;
+}
+
+.submit {
+  display: block;
+}
+
+input {
+  padding: 0.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */
